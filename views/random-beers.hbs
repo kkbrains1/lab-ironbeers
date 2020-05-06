@@ -1,15 +1,16 @@
-<h1>{{name}}</h1>
+
 
 <div>
     <li>
       <img src="{{singleBeer.image_url}}" alt="{{singleBeer.name}}">
-      {{singleBeer.name}}
+      <h2>{{singleBeer.name}}</h2>
       {{singleBeer.description}}
+      <br>
       {{singleBeer.tagline}}
     </li>
     
     
-    <h2>Food pairing</h2>
+    <h3>Food pairing</h3>
     
       {{#each singleBeer.food_pairing}} 
       <li>
@@ -17,10 +18,10 @@
       </li>
       {{/each}} 
 
-      <h2>Brewers Tips</h2>
-      {{singleBeer.brewers_tips}}
+    <h3>Brewers Tips</h3>
+    <p>{{singleBeer.brewers_tips}}</p>
 
 
-{{>beerpartial}}
+
   
 </div>
